@@ -1,0 +1,151 @@
+---
+title: "Intro R Tutorial"
+author: "Rebecca Beneroff"
+format: html
+editor: visual
+---
+
+Welcome to R! This is going to be a short crashcourse on R with lots of references at the end. As with all programming languages, it isn't possible to teach the breadth of the language in one tutorial but I hope this crash course will give a good place to start and a good introduction to some of the most common packages. It should allow you to begin manipulating and wrangling data.
+
+I do, at this point, caution against tryint to use AI. AI is definitely capable of providing you code for R but it will not be neat and will likely mix base R, weird functions (which we're not going to learn), and packages. Ultimately, it is likely it will do more to confuse you then help at this point until you have a good grasp on the language.
+
+## Start!
+
+We are working in a document called a quarto or .qmd file. This file type is neat because it allows you to use multiple languages in one document. For now, we will only be using R.
+
+To have R perform a function in a quarto document, we have to add an R chunk. This is chunk that allows us to type and run code. You can do this for now by clicking the green c button with the plus sign in the ribbon above and selecting R from the dropdown. It should insert the following:
+
+```{r}
+## This is our R chunk!
+```
+
+Anything you type in an R chunk, R will attempt to execute. If you want to add notations, you can comment them out by adding a hashtag in front of your text like I did in the chunk above.
+
+R can do simple things like math. To run the code in an R chunk, hit the green arrow button in the top right corner of the chunk or, while your cursor is in the chunk, hit cntrl/cmd (pc/mac) enter
+
+```{r}
+2+2
+```
+
+Data is stored in a dataframe which you can see in your "environment" tab. To save your data into a dataframe, you have to use the assignment operate: \<- or -\>
+
+Whenever you do anything that you want to. make sure you have saved within your environemnt (like clean data) be sure to assign it.
+
+Let's do a quick test, create a dataframe called "four" that is comprised of the function 2+2
+
+```{r}
+
+```
+
+Check: If you typed 'four \<- 2+2', you did it! You should now see four in your environment.
+
+```{r}
+four <- 2+2
+```
+
+Most of the time, our data will be imported datasets and we will use the assignment operator to iteratively save our work as we manipulate our data.
+
+## Loading packages
+
+Though base R has a lot of functionality, the beauty of R is that you can add lots of additional, specialized functionality through packages. Probably the most common package useed is called the tidyverse. Tidyverse provides more comprehensive data wrangling and visualization tools. It loads the following packages: ggplot2, dplyr, tidyr, readr, purr, tibble, stringr, forcats, lubridate
+
+For a clean R document, we tend to start by loading packages at the top of our document so before we do anything else, lets load tidyverse.
+
+```{r}
+## Loading Packages
+
+install.packages("tidyverse") ## Installs tidyverse
+library(tidyverse) ## loading in tidyverse
+```
+
+Find more information here: https://tidyverse.org/packages/
+
+## Data importation
+
+Now we will import our data, we are going to use a built in dataset within R that loads a table of Star Wars characters from the films.
+
+```{r}
+starwars <- starwars  
+
+```
+
+In your data frame you will have columns and row. Each row = 1 observation, each column = a variable. eg: name = the variable for character name
+
+This data set contains 87 characters (obs) and 14 variables.
+
+-   **name**: Character name
+
+-   **height**: Character height in cm
+
+-   **mass**: character weight in kg
+
+-   **hair_color**: Character hair color
+
+-   **skin_color**: Character skin color
+
+-   **eye_color**: Character eye color
+
+-   **birth_year**: Character Birth Year (BBY or ABY) \[Lots of missing values, all present I think are BBY\]
+
+-   **sex**: Character sex
+
+-   **gender**: Character gender
+
+-   **homeworld**: Character Homeworld
+
+-   **species**: Character species
+
+-   **films**: Films the character appears in
+
+-   **vehicles**: Vehicles associated with the character
+
+-   **starships**: Starships associated with the character
+
+## Data exploration tools:
+
+Some of these are from base R and some of these are from a package we installed called dplyr. You pretty much always want to use dplyr df = dataframe
+
+-   *glimpse())* (dplyr) - counts rows and columns, shows all variables and lists data. Not advised for this data set until after you've cleaned it, it's huge
+-   *nrow* (base R) - shows you how many rows are you in your data frame
+-   *ncol* (base R) - shows you how many columns are in your data frame
+-   *head()* (base R) - shows the beginning of your dataset
+-   *tail()* (base R) - shows the end of your dataset
+-   *summary()* (base R) - shows your variables, don't do this until you start cleaning. If you want to summarize one variable you can do *summary(DF\$variableOfInterest*)
+-   *count* (dplyr) - counts how many instances of values come up in variables in a df
+-   *filter()* (dplyr) - allows you to filter chosen rows. If you want to choose all rows **except** certain rows, you can write an arguement useing ! before the arguement which essentially means all except
+-   *select* (dplyr) - Allows you to select variables (columns) by name
+-   *rename* (dplyr) - Allows you to rename variables
+-   *mutate* (dplyr) - Allows you to add new variables (including new variables from arguements including existing variables)
+-   *relocate* (dplyr) - Allows you to rearrange variable locations
+
+If you want more information for any of these functions you can search them in the help tab!
+
+Lets look at our new dataframe.
+
+```{r}
+head(starwars)
+```
+
+## The pipe
+
+If you know Python, you're familiar with chaining. R becomes unreadable very quickly if you try to nest functions due to how object oriented it is (we tend to focus on manipulating specific groups of data). The solution for this messiness is pipes! If you want to chain functions together in R, you will use the pipe. You may see it look like this %\>% or \|\> . Personally, I use \|\>.
+
+So, if we wanted to look at just the female characters in Star Wars and create a new dataframe of them we would do the following:
+
+```{r}
+starWarsFem <- starwars |> # new data frame <- source of the data
+  filter(sex == "female")
+```
+
+We now have a dataframe that consists of just our female Star Wars characters
+
+```{r}
+head(starWarsFem)
+```
+
+We're going to stop here so you can play around with what we have so far. I'll expand this as we branch out into other subjects :)
+
+Here are some additional resources:
+
+-   https://tidyverse.org/learn/
+-   https://www.r-bloggers.com/2020/06/a-very-short-introduction-to-tidyverse/
