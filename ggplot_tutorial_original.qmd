@@ -1,0 +1,146 @@
+---
+title: "ggplot2 Tutorial"
+author: "Rebecca Beneroff"
+format: html
+editor: visual
+---
+
+# Getting Started with ggplot2
+
+`ggplot2` is the visualization package in the tidyverse, built around a "grammar of graphics". To build visualizations, you create a plot by adding layers that add data and relevant information. This allows a lot of customization and lets you make some strong, clean, visualizations. This tutorial will introduce you to ggplot and some visualization types and walk you through the process of creating some visualizations with ggplot.
+
+## Setup
+
+We're going to again start by loading packages. Just tidyverse again as it includes ggplot. If you get an error, it's because you don't have to reinstall tidyverse so just run the load library line.
+
+```{r}
+install.packages("tidyverse")  # only needed once
+library(tidyverse)              # loads ggplot2, dplyr, and friends
+```
+
+We'll use one of R's built in datasets again, this time the `mpg` dataset (car fuel economy data) so you don't need to import anything.
+
+```{r}
+glimpse(mpg)
+```
+
+## The Grammar of Graphics
+
+The "grammar of graphics" iis a framework for creating visualizations with code (and also what the gg in ggplot stands for!)
+
+Every ggplot2 plot has at minimum:
+
+1.  **Data** — a data frame (tidyverse loves tibbles)
+2.  **Aesthetics (`aes`)** — which variables map to which visual properties (x, y, color, size...)
+3.  **Geometry (`geom_*`)** — the type of visual mark (points, bars, lines...)
+
+```{r}
+ggplot(data = mpg, aes(x = displ, y = hwy)) +
+  geom_point()
+```
+
+If we wanted to break this down line by line, we'd start by saying:
+
+Line 1: "Start a plot with `mpg`, map engine displacement to x and highway mileage to y, Line 2: then draw it as points."
+
+Your base framework is always going to look like `ggplot(data, aes(...)) + geom_...()` , and add layers joined with `+`. Note, this is different than default tidyerse which connects its lines with the pipe operator (`|>` or `%>%`)
+
+## Mapping more variables with aesthetics
+
+We can also alter things like color, shape, or size:
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point()
+```
+
+This graph adds color by the class variable.
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy, size = cyl, color = class)) +
+  geom_point(alpha = 0.6) 
+```
+
+Here we change the size of the points and add transparency. This helps us visualize when multiple points would otherwise be overlapping
+
+**Note!!!:** we put mapping *inside* `aes()` when it depends on a column in your data. Put a fixed value (like a single color for every point) *outside* `aes()`:
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point(color = "steelblue")  # Sets all the points as the same color
+```
+
+## Common geoms
+
+| Goal                     | Geom               |
+|--------------------------|--------------------|
+| Scatterplot              | `geom_point()`     |
+| Line chart               | `geom_line()`      |
+| Bar chart (counts)       | `geom_bar()`       |
+| Bar chart (given values) | `geom_col()`       |
+| Histogram                | `geom_histogram()` |
+| Boxplot                  | `geom_boxplot()`   |
+| Smoothed trend line      | `geom_smooth()`    |
+
+```{r}
+# Histogram of highway mpg
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram(binwidth = 2, fill = "steelblue", color = "white")
+```
+
+```{r}
+# Boxplot comparing classes
+ggplot(mpg, aes(x = class, y = hwy)) +
+  geom_boxplot()
+```
+
+```{r}
+# Bar chart of counts
+ggplot(mpg, aes(x = class)) +
+  geom_bar()
+```
+
+You can also **layer multiple geoms** on the same plot:
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)  # add a trend line on top of the scatterplot
+```
+
+This is useful when we want to visualize things like trends in a scatterplot!
+
+## Labels, titles, and themes
+
+We can make our plots look even more tidy and polished by changing things like the labels with `labs()` for text and by adding themes `theme_*()` which modify overall look:
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point() +
+  labs(
+    title = "Engine Size vs. Highway Fuel Economy",
+    subtitle = "Data from the mpg dataset",
+    x = "Engine displacement (L)",
+    y = "Highway MPG",
+    color = "Vehicle class"
+  ) +
+  theme_minimal()
+```
+
+Other popular built-in themes: `theme_bw()`, `theme_classic()`, `theme_light()`.
+
+## Cheat-sheet mental model to remember
+
+(Code will not run, just for reference)
+
+```{r}
+ggplot(data, aes(x, y, ...)) +   # data + mappings
+  geom_...() +                    # how to draw it
+  facet_...() +                   # split into panels (optional)
+  labs(...) +                     # titles/labels (optional)
+  theme_...()                     # overall look (optional)
+```
+
+Every ggplot2 plot you'll ever write is some version of this recipe — start simple with one geom, then add layers as needed.
+
+Now go forth and explore!
