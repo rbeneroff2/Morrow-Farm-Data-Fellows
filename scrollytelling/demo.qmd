@@ -11,7 +11,7 @@ cr-style:
 
 Welcome to the scrollytelling side of things. We'll need to start by installing closeread. I've done this for now, but if you were to start this from scratch, you would go into the terminal and execute the following: quarto add qmd-lab/closeread
 
-This would tell install closeread into R and you should see a folder called \_extensions! We will likely have to do this later as we will want to make a fresh and clean repository with just the scrollytelling pieces for our final product.
+This would tell install closeread into R and you should see a folder called _extensions! We will likely have to do this later as we will want to make a fresh and clean repository with just the scrollytelling pieces for our final product.
 
 ### Setting up closeread
 
@@ -40,7 +40,7 @@ But she's so far away!!!
 
 What if we could zoom in?
 
-[@cr-picture-frankie-box]{scale-by="3"}
+[@cr-picture-frankie-box]{scale-by="2"}
 
 hint: we can
 
@@ -67,3 +67,9 @@ Here are some more resources that I'll also add to slack:
 * https://www.gastonsanchez.com/learn-closeread/#demo 
 * https://nrennie.rbind.io/scrollytelling/ 
 * https://github.com/sastoudt/rugb_scrollytell (from our own Sara Stoudt!)
+
+
+-----
+
+
+Demonstration 
