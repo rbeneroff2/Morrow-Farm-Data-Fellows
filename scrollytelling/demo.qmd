@@ -40,7 +40,7 @@ But she's so far away!!!
 
 What if we could zoom in?
 
-@cr-picture-frankie-box
+[@cr-picture-frankie-box]{scale-by="3"}
 
 hint: we can
 
