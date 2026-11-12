@@ -1,5 +1,7 @@
 ---
 title: "Website"
-format: html
+format: closeread-html
 ---
 
+:::::: {.cr-section layout="sidebar-left"}
+This is our first section! Now my cats are gonna help a little We can add pictures by using
