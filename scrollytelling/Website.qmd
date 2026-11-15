@@ -16,12 +16,23 @@ Link to the Union Snyder Food: Hubhttps://www.union-snydercaa.org/foodhub
 
 
 The Food Hub is a program of the Union-Snyder Community Action Agency operating out of Miller Center for Recreation & Wellness’ Cornerstone Kitchen. The Food Hub is an innovative and flexible solution to local food insecurity as it re-distributes food donations from the community to the various food access programs in Union and Snyder counties as well as to individuals in emergency need of food, who, for a variety of reasons, may not be able to access the other food resources in the area.
+
+https://censusreporter.org/profiles/16000US4242976-lewisburg-pa/ 
+https://www.centralpafoodbank.org/take-action/policy-research/sun-hunger-mapping/ 
+
+
+::: {layout-ncol=2}
+![](jpg/foodhub1.jpg)
+
+![](jpg/foodhub2.jpg)
+:::
 :::
 
 :::{focus-on="cr-both"}
 ### Food insecurity in Lewisburg?
 
 According to Census Reports, 20.8% of people in the Lewisburg Borough fall below the poverty line, which is almost double the US poverty rate.
+
 
 - For children under 18, the poverty rate is 35%, and for Senior Citizens the poverty rate is 19%.
 - 1 in 8 children in Union County are food insecure according to research from the Central PA Food Bank
@@ -37,6 +48,9 @@ Bucknell Morrow Farm:
 The Morrow Farm employs year-round regenerative agricultural practices to promote transformative educational opportunities, produce abundant nutritious foods, and foster student health and well-being. 
 
 The farm strives to be a welcoming and inclusive space where students, faculty, staff and community members collaborate through active, hands-on learning, cultivating tomorrow’s leaders for a more just and resilient food system.
+
+![](jpg/farmphoto1.png){width=100%}
+
 :::
 
 
@@ -52,6 +66,11 @@ About the Garden:
 - Approximately 2,000 lbs. of produce each year are donated from the graden to local food pantries and hot meal programs from just half an acre of land.
 - The garden uses a sliding-scale rent system, allowing families with limited financial resources to access plots while those with greater financial flexibility help offset the cost.
 
+::: {layout-ncol=2}
+![](jpg/gardenphoto_1.jpg)
+
+![](jpg/gardenphoto1.jpg)
+:::
 :::
 
 :::
@@ -62,12 +81,10 @@ About the Garden:
 
 :::{focus-on="cr-early"}
 ### 2012
-Short sentence about the early years.
 :::
 
 :::{focus-on="cr-mid"}
 ### 2020-2021
-Short sentence about this stretch.
 :::
 
 :::{focus-on="cr-late"}
@@ -103,3 +120,5 @@ First annual Plant Sale.
 (#cr-mid and #cr-late follow the same pattern)
 
 :::
+
+
