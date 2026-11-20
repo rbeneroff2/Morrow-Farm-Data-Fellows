@@ -379,5 +379,253 @@ Hosted over 40 garden members, renting plots and growing their own food
 - Fall: Established a You-Pick section offering seasonal vegetables, berries, and cut flowers to students and the community. These items are excluded from reported harvest totals.
 
 :::
+:::
+
+:::{focus-on="cr-both"}
+
+### Morrow Farm Student Engagement Timeline
+
+::: {layout-ncol=2}
+
+
+:::{.cr-section layout="sidebar-left" .fifty-fifty}
+
+:::{focus-on="cr-tl2018"}
+### Site Setup & Early Course Integration
+***2018***
 
 :::
+
+:::{focus-on="cr-tl2019"}
+### First Full Growing Season
+***2019***
+
+:::
+
+:::{focus-on="cr-tl2020"}
+### Student Engineering Hoophouse & Labyrinth
+***2020***
+
+:::
+
+:::{focus-on="cr-tl2022"}
+### PASA Conference Research & MSS Collaboration
+***2022***
+
+:::
+
+:::{focus-on="cr-tl2023"}
+### Orientation Tours & Seasonal Festivals Launch
+***2023***
+:::
+
+:::{focus-on="cr-tl2024"}
+### ICEPOP & Infrastructure Expansion
+***2024***
+:::
+
+:::{focus-on="cr-tl2025"}
+### Dedicated U-Pick Section Established
+***2025***
+:::
+
+:::{focus-on="cr-tl2026"}
+### Expanded U-Pick & Academic Growth
+***2025***
+:::
+:::{#cr-tl2018}
+- Over 250 students engaged with the farm through orientation programs, student groups, and academic courses in its very first semester.
+- Initial site infrastructure established (water lines, tool shed, walking paths).
+
+:::
+
+:::{#cr-tl2019}
+- Student volunteers and farm staff planted and harvested 2,600 lbs of produce.
+
+:::
+
+:::{#cr-tl2020}
+- Engineering students collaborated to design and build the farm's first passive greenhouse hoophouse ("Slug").
+- Partnered with the Office of Religious & Spiritual Life to construct a meditation labyrinth on farm grounds.
+
+:::
+
+:::{#cr-tl2022}
+- Student Farmers presented research on soil health, composting, and Indigenous farming at the PASA Winter Conference.
+- Joined the Diversified Vegetable Pre-Apprenticeship (DVP) summer program.
+- Co-hosted MSS Ramp-Up pre-orientation, focusing on food justice, race, and equitable agriculture.
+
+:::
+
+:::{#cr-tl2023}
+- Introduced First-Year Orientation Tours, bringing 200+ incoming students for berry picking and bouquet making.
+- Launched annual student/community events: Earth Day Celebration and the Harvest Festival.
+- Morrow Farm and Lewisburg Community Garden combined into a single unified program.
+:::
+
+:::{#cr-tl2024}
+- Added ICEPOP (Interfaith Community Engagement Pre-Orientation Program) farm visits.
+- Built second hoophouse ("Snail"), expanding season extension for student growing.
+:::
+
+:::{#cr-tl2025}
+- Launched a dedicated You-Pick section for students to self-harvest seasonal fruits, vegetables, and cut flowers.
+- Renamed to Morrow Farm following a major gift.
+:::
+
+:::{#cr-tl2026}
+- U-Pick section operated from April 15 through October.
+- Hosted 88 Farm Hours volunteer sessions (~264 programming hours) and partnered with 43 academic courses (977 student enrollments).
+
+:::
+:::
+
+:::{focus-on="cr-both"}
+
+### Lewisburg Community Garden Student Engagement Timeline
+
+::: {layout-ncol=2}
+
+:::{.cr-section layout="sidebar-left" .fifty-fifty}
+
+:::{focus-on="cr-tl2011"}
+### Interfaith Initiative & Land Agreement
+***2011***
+:::
+
+:::{focus-on="cr-tl2012"}
+### Official Launch & Management 101 Project
+***2012***
+:::
+
+:::{focus-on="cr-tl2015"}
+### Course & Program Integration Peak
+***2015***
+:::
+
+:::{focus-on="cr-tl2016"}
+### Engineering & Residence College Projects
+***2016***
+:::
+
+:::{focus-on="cr-tl2017"}
+### Student Leadership & Pre-Orientation Expansion
+***2017***
+:::
+
+:::{focus-on="cr-tl2018-23"}
+### Research & Student Plot Rentals
+***2018 - 2023***
+:::
+
+:::{focus-on="cr-tl2024-26"}
+### Garden Tour Fundraiser & Student Volunteer Milestones
+***2024 - 2026***
+:::
+
+:::{#cr-tl2011}
+- Conceived via the President's Interfaith Community Service Initiative to bring students, staff, and community members together around local food security.
+- Lewisburg Borough Council approved the 5-year land lease.
+:::
+
+:::{#cr-tl2012}
+- Officially launched as a joint venture between Bucknell’s Office of Civic Engagement and the Lewisburg Borough.
+- Management 101 student company raised over $2,000 for fencing, raised beds, tools, and the shed.
+- Hired first student garden interns (Jasmine Johnson & Nick Jones).
+- Bucknell students launched a recurring youth summer camp with the Buffalo Valley Recreation Authority.
+:::
+
+:::{#cr-tl2015}
+- Engaged 7 Bucknell courses/programs (including Building On Foundations, Environmental Studies, Field Entomology, and RA Resource Training).
+- Student volunteers helped grow 2,507 lbs of produce for 6 local donation recipients.
+:::
+
+:::{#cr-tl2016}
+- Engaged 9 Bucknell programs/classes, including B-LINC pre-orientation, Civil & Environmental Engineering, Electrical Engineering, and the Social Justice Residential College.
+- Student volunteers and interns managed donated harvest yielding 3,688 lbs.
+:::
+
+:::{#cr-tl2017}
+- Hosted student pre-orientation groups (B-LINC, RAMP Up!) and campus student organizations (Environmental Club, Black Student Union).
+- Engaged senior Environmental Studies students in capstone community projects.
+:::
+
+:::{#cr-tl2018-23}
+- Digital Narrative summer research conducted with student fellows.
+- Student plot renters and volunteers consistently maintained 30+ annual community plots and weekly volunteer hours.
+:::
+
+:::{#cr-tl2024-26}
+- 2024: Welcomed over 127 community and student volunteers; Bucknell Lacrosse team collaborated to rebuild gravel pathways.
+- 2025–2026: Conducted 48 regular volunteer sessions and launched the annual Lewisburg Garden Tour fundraiser.
+
+:::
+:::
+
+```{=html}
+<style>
+.full-img {
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100vh !important;
+  object-fit: cover;
+}
+</style>
+```
+:::{focus-on="cr-both"}
+
+### Students get involved at the farm with:
+
+::: {layout-ncol=2}
+
+:::{.cr-section layout="overlay-center"}
+
+:::{focus-on="cr-full1"}
+### Farm Hours - hands-on volunteering: 
+- Offered four evenings per week during fall and spring semesters, and once weekly in summer.
+- Students volunteer alongside Farm staff and community members, learning practical farming skills.
+- Student Farmers also practice leading and teaching volunteers.
+- The 2025 - 2026 report records 88 sessions, totaling approximately 264 hours of programming.
+
+:::
+
+:::{focus-on="cr-full2"}
+### Plot rentals:
+- The Lewisburg Community Garden offers individual growing spaces to community members.
+- Renters receive support from Farm and Garden staff and students, with access to tools, compost, and seeds.
+- The Garden supports food security and sustainable gardening; more than 30 plots are rented each year.
+- The Community Garden was established in 2012.
+
+:::
+
+:::{focus-on="cr-full3"}
+### U-pick: 
+
+- Started in Fall 2025: the Farm established a dedicated self-harvesting section.
+- Students and community members can pick seasonal vegetables, berries, and cut flowers.
+- First-year students had already experienced berry picking and bouquet-making through orientation tours since 2023, before the dedicated section was established.
+
+U-Pick Section available:
+- 2025: Fall semester -> End of october
+- 2026: April 15 -> End of october
+
+
+:::
+
+:::{#cr-full1}
+![](jpg/Farmhrs.jpg){.full-img}
+
+:::
+
+:::{#cr-full2}
+![](jpg/Plotrentals.jpg){.full-img}
+
+:::
+
+:::{#cr-full3}
+![](jpg/Upick.jpg){width=100%}
+
+:::
+
+:::
+
